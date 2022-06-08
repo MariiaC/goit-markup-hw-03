@@ -1,0 +1,242 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #F5F4FA;
+    --footer-color: #2F303A;
+}
+
+/*скидываем точки возле списка*/
+.list {
+    list-style: none;
+}
+
+/*скидываем подчеркивания линков*/
+.link {
+    text-decoration: none;
+}
+
+/*текст тега р*/
+.text {
+    color: var(--secondary-text-color);
+}
+
+/*body */
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/*logo header*/
+.logo {
+    color: var(--primary-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo>.web {
+    color: var(--accent-color);
+}
+
+/* список навигации header*/
+.site-nav-link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.site-nav-link:hover, :focus {
+    color: var(--accent-color);
+
+}
+
+/* список контактов header*/
+.contact-nav-link {
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.contact-nav-link:hover,
+:focus {
+    color: var(--accent-color);
+}
+
+/*первая секция hero*/
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/*main-button для index.html, portfolio-button для portfolio.html */
+.main-button {
+    background-color: var(--accent-color);
+    color: var(--secondary-background-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+.portfolio-button{
+    background-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-background-color);
+}
+
+/*вторая секция advantage*/
+.advantage-list-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.advantage-list-text {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/*третья секция responsibilities*/
+.responsibilities-list {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/*четвертая секция team*/
+.team {
+    background-color: var(--secondary-background-color);
+}
+
+.member-description {
+    background-color: var(--primary-background-color);
+}
+
+.team-list {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.team-member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.team-member-text {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/*основная секция portfolio*/
+.portfolio-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.3;
+    color: var(--primary-text-color);
+    letter-spacing: 0.06em;
+}
+
+.portfolio-name:hover,
+:focus {
+    color: var(--accent-color);
+}
+
+.portfolio-description {
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.portfolio-description:hover,
+:focus {
+    color: var(--accent-color);
+}
+
+.portfolio-img:hover,
+:focus {
+    color: var(--accent-color);
+}
+
+
+/*footer*/
+.footer {
+    background-color: var(--footer-color);
+}
+
+.logo-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo-footer>.web-footer {
+    color: var(--accent-color);
+}
+
+.logo-footer>.studio-footer {
+    color: var(--primary-background-color);
+}
+
+.nav-footer-adress {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--primary-background-color);
+}
+
+.nav-footer-adress:hover,
+:focus {
+    color: var(--accent-color);
+}
+
+.nav-footer-contact {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-footer-contact:hover,
+:focus {
+    color: var(--accent-color);
+}
