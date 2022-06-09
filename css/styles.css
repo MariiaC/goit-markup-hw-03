@@ -7,7 +7,7 @@
     --footer-color: #2F303A;
 }
 
-/*для разметки*/
+/*для разметки
 header,
 footer,
 section,
@@ -19,7 +19,7 @@ h2,
 h3,
 p {
     outline: 2px solid tomato;
-}
+}*/
 
 /*скидываем точки возле списка и марджины для ul*/
 .list {
@@ -71,11 +71,20 @@ body {
     padding-right: 15px;
 }
 
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
 /*page-header*/
 .page-header {
-    background-color: #ccc;
     padding: 12px 200px 21px 200px;
+    /*background-color: #ccc;*/
 }
+.page-header-portfolio{
+        padding: 12px 200px 21px 200px;
+        border-bottom: 1px solid #ECECEC;
+    }
 
 
 /*logo header*/
@@ -85,6 +94,8 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    margin-right: 93px;
+
 }
 
 .logo>.web {
@@ -92,6 +103,18 @@ body {
 }
 
 /* список навигации header*/
+.site-nav {
+    display: flex;
+    margin-right: 331px;
+}
+
+.site-nav-item {
+    margin-right: 50px;
+}
+
+.site-nav-item:last-child {
+    margin-right: 0;
+}
 
 .site-nav-link {
     color: var(--primary-text-color);
@@ -108,6 +131,17 @@ body {
 }
 
 /* список контактов header*/
+.contact-nav {
+    display: flex;
+}
+
+.contact-nav-item:last-child {
+    margin-right: 0;
+}
+
+.contact-nav-item {
+    margin-right: 50px;
+}
 
 .contact-nav-link {
     color: var(--secondary-text-color);
@@ -126,6 +160,7 @@ body {
 
 .hero {
     padding: 200px;
+    background-color: var(--footer-color);
 }
 
 .hero-title {
@@ -136,6 +171,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
+    color: var(--primary-background-color);
 }
 
 /*main-button для index.html */
@@ -166,12 +202,17 @@ body {
 .advantage-list {
     display: none;
 }
+.advantage-content{
+    display: flex;
+}
 
 .advantage {
     padding-left: 200px;
     padding-right: 200px;
 }
-
+.advantage-item {
+    width: 270;
+}
 .advantage-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -193,6 +234,9 @@ body {
     padding-left: 200px;
     padding-right: 200px;
 }
+.responsibilities-content{
+    display: flex;
+}
 
 .responsibilities-item:not(:last-child) {
     margin-right: 30px;
@@ -211,6 +255,9 @@ body {
     background-color: var(--secondary-background-color);
     padding-left: 200px;
     padding-right: 200px;
+}
+.team-pics{
+    display: flex;
 }
 
 .team-item:not(:last-child) {
@@ -284,10 +331,16 @@ body {
 
 .portfolio-item {
     width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
-.portfolio-item:not(:last-child) {
-    margin-right: 30px;
+
+.portfolio-item:nth-child(3n) {
+    margin-right: 0px;
+}
+.portfolio-item:nth-last-child(-n+3){
+    margin-bottom: 0;
 }
 
 .portfolio-img:hover,
@@ -296,9 +349,18 @@ body {
     margin-bottom: 20px;
 }
 
+.portfolio-img {
+    display: block;
+}
+
 .item-description {
     border: 1px solid #EEEEEE;
     border-top: none;
+}
+
+.portfolio-galery{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*portfolio-button для portfolio.html*/
@@ -335,7 +397,11 @@ body {
 .button-list {
     min-width: 611px;
     margin-bottom: 34px;
-}
+    display: flex;
+    justify-content: center
+   }
+
+
 
 /*footer*/
 .footer {
