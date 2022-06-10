@@ -263,8 +263,8 @@ body {
 
 .member-description {
     background-color: var(--primary-background-color);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-list {
@@ -317,7 +317,6 @@ body {
 .portfolio-description {
     font-size: 16px;
     line-height: 1.9;
-    padding-bottom: 20px;
 }
 
 .portfolio-description:hover,
@@ -389,7 +388,8 @@ body {
 .button-list {
     margin-bottom: 34px;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    min-width: 611px;
      }
 
 /*footer*/
@@ -403,8 +403,8 @@ body {
     min-width: 231px;
 }
 
-.footer-address{
-margin-bottom: 9px;
+.footer-address:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .logo-footer {
