@@ -9,6 +9,7 @@
 
 /*для разметки
 header,
+div,
 footer,
 section,
 main,
@@ -60,8 +61,6 @@ body {
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
-    margin: 0;
-    width: 1600px;
     margin: 0 auto;
 }
 
@@ -69,6 +68,7 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
 }
 
 .main-nav {
@@ -78,12 +78,14 @@ body {
 
 /*page-header*/
 .page-header {
-    padding: 12px 200px 21px 200px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     /*background-color: #ccc;*/
 }
 .page-header-portfolio{
-        padding: 12px 200px 21px 200px;
-        border-bottom: 1px solid #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ECECEC;
     }
 
 
@@ -159,7 +161,8 @@ body {
 /*первая секция hero*/
 
 .hero {
-    padding: 200px;
+    padding-bottom: 200px;
+    padding-top: 200px;
     background-color: var(--footer-color);
 }
 
@@ -194,8 +197,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px solid transparent;
-
-}
+    }
 
 /*вторая секция advantage*/
 /* скрываем h2 .advantage-lis - как костыль, на след занятиях разберем*/
@@ -206,10 +208,6 @@ body {
     display: flex;
 }
 
-.advantage {
-    padding-left: 200px;
-    padding-right: 200px;
-}
 .advantage-item {
     width: 270;
 }
@@ -222,6 +220,7 @@ body {
     font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .advantage-list-text {
@@ -230,10 +229,10 @@ body {
 }
 
 /*третья секция responsibilities*/
-.responsibilities {
-    padding-left: 200px;
-    padding-right: 200px;
+.responsibilities{
+    padding-top: 0;
 }
+
 .responsibilities-content{
     display: flex;
 }
@@ -253,8 +252,6 @@ body {
 /*четвертая секция team*/
 .team {
     background-color: var(--secondary-background-color);
-    padding-left: 200px;
-    padding-right: 200px;
 }
 .team-pics{
     display: flex;
@@ -266,6 +263,8 @@ body {
 
 .member-description {
     background-color: var(--primary-background-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .team-list {
@@ -281,23 +280,20 @@ body {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
     min-width: 270px;
+    margin-bottom: 10px;
 }
 
 .team-member-text {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
     min-width: 270px;
 }
 
 /*основная секция portfolio*/
 .portfolio {
-    padding: 98px 200px;
+    padding: 98px;
 }
 
 .portfolio-title {
@@ -335,7 +331,6 @@ body {
     margin-bottom: 30px;
 }
 
-
 .portfolio-item:nth-child(3n) {
     margin-right: 0px;
 }
@@ -356,6 +351,7 @@ body {
 .item-description {
     border: 1px solid #EEEEEE;
     border-top: none;
+    padding: 20px 24px;
 }
 
 .portfolio-galery{
@@ -375,12 +371,9 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-    width: 128px;
-    height: 38px;
-    top: 174px;
-    left: 576px;
     border-radius: 4px;
-    border: 1px solid transparent;
+    border: none;
+    padding: 6px 22px;   
 }
 
 .portfolio-button:hover,
@@ -391,17 +384,13 @@ body {
 
 .button-item:not(:last-child) {
     margin-right: 8px;
-    min-width: 73px;
 }
 
 .button-list {
-    min-width: 611px;
     margin-bottom: 34px;
     display: flex;
     justify-content: center
-   }
-
-
+     }
 
 /*footer*/
 .footer {
@@ -412,6 +401,10 @@ body {
 
 .nav-footer {
     min-width: 231px;
+}
+
+.footer-address{
+margin-bottom: 9px;
 }
 
 .logo-footer {
