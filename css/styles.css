@@ -293,7 +293,8 @@ body {
 
 /*основная секция portfolio*/
 .portfolio {
-    padding: 98px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .portfolio-title {
@@ -386,10 +387,9 @@ body {
 }
 
 .button-list {
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    min-width: 611px;
      }
 
 /*footer*/
