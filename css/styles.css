@@ -233,6 +233,10 @@ body {
     padding-top: 0;
 }
 
+.responsibilities-image{
+    display: block;
+}
+
 .responsibilities-content{
     display: flex;
 }
@@ -255,6 +259,9 @@ body {
 }
 .team-pics{
     display: flex;
+}
+.team-image{
+    display: block;
 }
 
 .team-item:not(:last-child) {
@@ -299,6 +306,10 @@ body {
 
 .portfolio-title {
     display: none;
+}
+
+.portfollio-img{
+    display: block;
 }
 
 .portfolio-name {
