@@ -127,7 +127,7 @@ body {
 }
 
 .site-nav-link:hover,
-:focus {
+.site-nav-link:focus {
     color: var(--accent-color);
 
 }
@@ -154,7 +154,7 @@ body {
 }
 
 .contact-nav-link:hover,
-:focus {
+.contact-nav-link:focus {
     color: var(--accent-color);
 }
 
@@ -322,7 +322,7 @@ body {
 }
 
 .portfolio-name:hover,
-:focus {
+.portfolio-name:focus {
     color: var(--accent-color);
 }
 
@@ -332,7 +332,7 @@ body {
 }
 
 .portfolio-description:hover,
-:focus {
+.portfolio-description:focus {
     color: var(--accent-color);
 }
 
@@ -350,7 +350,7 @@ body {
 }
 
 .portfolio-img:hover,
-:focus {
+.portfolio-img:focus {
     color: var(--accent-color);
     margin-bottom: 20px;
 }
@@ -446,7 +446,7 @@ body {
 }
 
 .nav-footer-adress:hover,
-:focus {
+.nav-footer-adress:focus {
     color: var(--accent-color);
 }
 
@@ -460,6 +460,6 @@ body {
 }
 
 .nav-footer-contact:hover,
-:focus {
+.nav-footer-contact:focus {
     color: var(--accent-color);
 }
